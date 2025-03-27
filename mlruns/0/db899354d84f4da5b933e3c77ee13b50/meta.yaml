@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Projects/Hotel%20Reservation/mlruns/0/db899354d84f4da5b933e3c77ee13b50/artifacts
+end_time: 1743084719126
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: db899354d84f4da5b933e3c77ee13b50
+run_name: funny-colt-236
+run_uuid: db899354d84f4da5b933e3c77ee13b50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743084719078
+status: 4
+tags: []
+user_id: Admin

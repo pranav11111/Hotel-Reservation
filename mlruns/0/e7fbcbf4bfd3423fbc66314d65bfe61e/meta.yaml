@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Projects/Hotel%20Reservation/mlruns/0/e7fbcbf4bfd3423fbc66314d65bfe61e/artifacts
+end_time: 1743086643074
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7fbcbf4bfd3423fbc66314d65bfe61e
+run_name: handsome-gnat-600
+run_uuid: e7fbcbf4bfd3423fbc66314d65bfe61e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743086534899
+status: 3
+tags: []
+user_id: Admin

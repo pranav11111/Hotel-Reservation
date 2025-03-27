@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Projects/Hotel%20Reservation/mlruns/0/7f9fa4be7d08467c8904a58036bff286/artifacts
+end_time: 1743085495548
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7f9fa4be7d08467c8904a58036bff286
+run_name: capricious-rat-131
+run_uuid: 7f9fa4be7d08467c8904a58036bff286
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743085384858
+status: 3
+tags: []
+user_id: Admin
