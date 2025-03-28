@@ -5,6 +5,8 @@ pipeline{
     environment{
         
         VENV_DIR = 'venv'
+        GCP_PROJECT = 'turing-alcove-454906-a1'
+        GCLOUD_PATH = 'var/jenkins_home/google-cloud-sdk/bin'
 
     }
 
@@ -32,6 +34,33 @@ pipeline{
                     pip install --upgrade pip
                     pip install -e .
                     '''
+                }
+
+            }
+
+        }
+
+        stage('Building and pushing docker image to GCR'){
+            steps{
+                withCredentials(file(credentialsId: 'GCP-Key', variable: 'GOOGLE_APP_CRED')){
+                    script{
+                        echo 'Building and pushing docker image to GCR'
+                        sh '''
+                        export PATH=$PATH:$(GCLOUD_PATH)
+
+                        gcloud auth activate-service-account --key-file=${GOOGLE_APP_CRED}
+
+                        gcloud config set project ${GCP_PROJECT}
+
+                        gcloud auth configure-docker --quite
+
+                        docker build -t gcr.io/{GCP_PROJECT}/Hotel-Reservation:latest .
+
+                        docker push gcr.io/{GCP_PROJECT}/Hotel-Reservation:latest 
+
+                        '''
+                    }
+
                 }
 
             }
