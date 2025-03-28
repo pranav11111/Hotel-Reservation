@@ -10,3 +10,4 @@ xgboost
 lightgbm
 pyyaml
 mlflow
+flask
